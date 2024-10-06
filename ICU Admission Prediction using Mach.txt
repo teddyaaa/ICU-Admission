@@ -1,0 +1,52 @@
+ICU Admission Prediction using Machine Learning
+This repository contains a machine learning project aimed at predicting ICU admissions using advanced gradient boosting models such as XGBoost, LightGBM, and CatBoost. By accurately predicting ICU admissions, healthcare providers can optimize resource management and improve patient care.
+
+Table of Contents
+Introduction
+Dataset Description
+Installation
+Usage
+Machine Learning Models
+Results and Performance
+Contributing
+License
+Introduction
+Predicting ICU admissions early is crucial for efficient hospital resource management and improved patient care. This project utilizes state-of-the-art machine learning models to predict ICU admissions based on patient demographic and clinical data.
+
+The primary objective of this project is to compare the performance of three gradient boosting algorithms (XGBoost, LightGBM, and CatBoost) to determine the most reliable model for ICU admission prediction.
+
+Dataset Description
+The dataset contains clinical and demographic data related to ICU admissions. The key features include:
+
+Age: The age of the patient.
+Respiratory Rate: A vital sign indicating the patient's breathing rate.
+Blood Pressure (Systolic, Diastolic): Measures the patient's cardiovascular health.
+Oxygen Saturation (SpO2): Indicates respiratory condition.
+Gender: The gender of the patient.
+ICU Admission: The target variable (1 = ICU admission, 0 = no ICU admission).
+Data preprocessing involved handling missing values, scaling the features, and splitting the data into training, validation, and test sets.
+Machine Learning Models
+The following machine learning models were used in the project:
+
+XGBoost: A highly effective gradient boosting algorithm optimized for structured data.
+LightGBM: A faster gradient boosting framework optimized for large datasets.
+CatBoost: A robust gradient boosting model known for handling categorical data efficiently.
+All models were trained on the same dataset split (training, validation, test) to ensure a fair comparison. Early stopping was employed where necessary to avoid overfitting.
+
+Results and Performance
+The following are the accuracy scores achieved by each model:
+
+XGBoost: 85.6% accuracy
+LightGBM: 85.4% accuracy
+CatBoost: 86.1% accuracy
+Feature Importance
+Key clinical features such as respiratory rate, blood pressure, and oxygen saturation were identified as the most important predictors for ICU admissions.
+
+Contributing
+We welcome contributions to improve the models or enhance the project. To contribute:
+
+Fork the repository.
+Create a new feature branch (git checkout -b feature-branch).
+Commit your changes (git commit -m 'Add new feature').
+Push to the branch (git push origin feature-branch).
+Create a new pull request.
